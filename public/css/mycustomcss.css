@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --white: #FFFFFF;
+    --black: black;
+    --primary-color: #48944B;
+    --secondary-color: #FB9B00;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-size: 20px !important;
+}
+
+.mynavbar {
+    background-color: var(--white) !important;
+}
+
+.mynavbar .navbar-nav {
+    margin-left: auto !important;
+}
+
+.navbar-nav li a {
+    color: var(--primary-color) !important;
+    font-size: 20px !important;
+}
+
+.myshopetop {
+    position: relative;
+    bottom: 60px;
+    padding: 10px;
+    left: 10px;
+    border: 0;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.firsttopcontainer {
+    position: relative;
+    bottom: 150px;
+    padding: 10px;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.firsttopcontainer button {
+    border: 0;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.second {
+    text-align: center;
+}
+
+.second .what {
+    border-bottom: var(--primary-color) solid;
+    border-bottom-style: dashed !important;
+    border-bottom-width: 10px;
+    width: 150px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    right: 50%;
+}
+
+.whatwedo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.whatwedo {
+    margin-top: 20px;
+}
+
+.whatwedo h1 {
+    cursor: pointer;
+    border-bottom: 2px var(--primary-color) solid;
+}
+
+.tside {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-right: var(--black) solid;
+}
+
+.tside p {
+    border-bottom: var(--primary-color) solid;
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.homepro img {
+    height: 250px;
+    border-radius: 40px 0px 0px 0px;
+    transition: 2.5;
+    overflow: hidden !important;
+}
+
+.homepro img:hover {
+    transform: scale(1.1);
+}
+
+.homepro div {
+    margin-bottom: 10px;
+}
+
+.imgbox {
+    box-shadow: 3px 0px 3px 3px;
+}
+
+.imgbox a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.imgbox a:hover {
+    color: var(--black);
+}
+
+.priceholdergrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.priceholdergrid button {
+    border: 0;
+    background-color: var(--primary-color);
+    padding: 8px;
+    color: var(--white);
+}
+
+.icons {
+    position: relative;
+    bottom: 60%;
+}
+
+.icons h1 {
+    background-color: var(--secondary-color);
+    text-align: center;
+    color: var(--white);
+    width: 50px;
+}
+
+.holders {
+    position: relative;
+    bottom: 15px;
+    text-align: center;
+}
+
+.coronavirous {
+    background-color: var(--primary-color);
+    height: 350px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.coronavirous .myfirstr {
+    padding-top: 100px;
+    color: var(--white);
+}
+
+.coronavirouscolo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

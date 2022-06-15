@@ -1,0 +1,142 @@
+:root {
+    --white: #FFFFFF;
+    --black: black;
+    --primary-color: #48944B;
+    --secondary-color: #FB9B00;
+}
+
+.adminsidebar {
+    background-color: var(--primary-color);
+    height: 100%;
+}
+
+.adminsidebar li {
+    background-color: var(--primary-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.adminsidebar li:hover {
+    background-color: var(--black);
+    cursor: pointer;
+}
+
+.adminsidebar li:hover a {
+    color: var(--white);
+}
+
+.adminsidebar li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/*
+top padding is 25px
+right padding is 50px
+bottom padding is 75px
+left padding is 100px
+*/
+
+.admincontent {
+    box-shadow: 8px 5px 10px 10px;
+}
+
+.admincontent h1 {
+    background-color: var(--primary-color);
+    padding: 8px;
+    text-align: center;
+    color: var(--white);
+}
+
+.myadminform input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 8px solid var(--black);
+    outline: none;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.myadminform textarea {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 8px solid var(--black);
+    outline: none;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.myadminform input:focus {
+    border-bottom: 8px solid var(--black);
+    color: var(--black);
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: none;
+    outline: none;
+}
+
+.myadminform textarea:focus {
+    border-bottom: 8px solid var(--black);
+    color: var(--black);
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: none;
+    outline: none;
+}
+
+.myadminform input[type=submit] {
+    background-color: var(--primary-color) !important;
+    color: var(--white);
+    margin-top: 10px;
+    border: 0 !important;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.table thead {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+#cartprint_filter {
+    display: none;
+}
+
+#cartprint_wrapper {
+    text-align: center;
+}
+
+#cartprint_wrapper .dt-button {
+    background-color: green !important;
+    padding: 10px;
+    color: white;
+    margin-bottom: 5px !important;
+}
+
+#myinputsalesearch {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 8px solid var(--black);
+    outline: none;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#myinputsalesearch:focus {
+    border-bottom: 8px solid var(--black);
+    color: var(--black);
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: none;
+    outline: none;
+}
