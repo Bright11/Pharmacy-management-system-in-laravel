@@ -2,17 +2,16 @@
 
 namespace App\Models;
 
-use App\Models\Poscart;
+use App\Models\Medication;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Medication extends Model
+class Poscart extends Model
 {
     use HasFactory;
-
-    public function Poscart()
+    public function Medication()
     {
         # code...
-        return $this->belongsToMany(Poscart::class,'drug_id','id');
+        return $this->belongsTo(Medication::class,'id');
     }
 }

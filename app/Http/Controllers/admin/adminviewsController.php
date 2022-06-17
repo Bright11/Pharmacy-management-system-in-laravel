@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\branch;
 use App\Models\Medication;
+use App\Models\Poscart;
+use App\Models\Poschechout;
 use Illuminate\Support\Facades\Auth;
 
 class adminviewsController extends Controller
@@ -32,9 +34,10 @@ class adminviewsController extends Controller
     public function productsalenow()
     {
         # code...
-
-        $medecin=Medication::where('branch_id',Auth::user()->branch_id)->get();
-        return view('admin.productsalenow',['medecin'=>$medecin]);
+        $calculate=Poscart::where('branch_id',Auth::user()->branch_id)->where('user_id',Auth::user()->id)->sum('totalprice');
+        $posbuy=Poscart::where('branch_id',Auth::user()->branch_id)->where('user_id',Auth::user()->id)->get();
+        $medecin=Medication::where('branch_id',Auth::user()->branch_id)->where('qty','<>',0)->get();
+        return view('admin.productsalenow',['medecin'=>$medecin,'posbuy'=>$posbuy,'calculate'=>$calculate]);
     }
 
     public function viewallusers()
@@ -74,6 +77,9 @@ class adminviewsController extends Controller
     public function admindashboard()
     {
         # code...
-        return view('admin.admindashboard');
+        $nofdrug=Medication::count();
+        $drugtotalp=Medication::sum('price');
+        $soldedrug=Poschechout::sum('total');
+        return view('admin.admindashboard',['soldedrug'=>$soldedrug,'nofdrug'=>$nofdrug,'drugtotalp'=>$drugtotalp]);
     }
 }

@@ -26,6 +26,8 @@
             <input type="text" name="expiring_date" class="form-control" value="{{ date('d/m/Y') }}">
         </div>
     </div>
+    <label for="">Drug Quantity</label>
+    <input type="number" name="qty" class="form-control" >
     <label for="">Drug Imag <small>Optional</small></label>
             <input type="file" name="image" class="form-control">
 

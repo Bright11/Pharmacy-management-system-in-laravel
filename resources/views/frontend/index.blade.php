@@ -1,7 +1,7 @@
 @extends('include.master')
 
 @section('content')
-<div class="container-fluid">
+<div class="container-fluid mt-5">
     <section class="firstsection">
      <div class="row ftrow">
          <div class="col-md-8 ">
@@ -48,96 +48,29 @@
 </div>
 <div class="col-md-9 mt-2 ml-1">
  <div class="row homepro">
-     <div class="col-md-4 imgbox">
-         <a href="">
-             <img src="img/port.png"  class="img-fluid"/>
-         <div class="icons">
-             <h1>Sales</h1>
-         </div>
-         <div class="holders">
-             <h1>Product name</h1>
-             <div class="priceholdergrid">
-                 <p>$1000</p>
-                 <button>Add to cart</button>
-             </div>
-         </div>
-         </a>
-     </div>
-     <div class="col-md-4 imgbox">
-         <a href="">
-             <img src="img/port.png"  class="img-fluid"/>
-         <div class="icons">
-             <h1>Sales</h1>
-         </div>
-         <div class="holders">
-             <h1>Product name</h1>
-             <div class="priceholdergrid">
-                 <p>$1000</p>
-                 <button>Add to cart</button>
-             </div>
-         </div>
-         </a>
-     </div>
-     <div class="col-md-4 imgbox">
-         <a href="">
-             <img src="img/port.png"  class="img-fluid"/>
-         <div class="icons">
-             <h1>Sales</h1>
-         </div>
-         <div class="holders">
-             <h1>Product name</h1>
-             <div class="priceholdergrid">
-                 <p>$1000</p>
-                 <button>Add to cart</button>
-             </div>
-         </div>
-         </a>
-     </div>
-     <div class="col-md-4 imgbox">
-         <a href="">
-             <img src="img/port.png"  class="img-fluid"/>
-         <div class="icons">
-             <h1>Sales</h1>
-         </div>
-         <div class="holders">
-             <h1>Product name</h1>
-             <div class="priceholdergrid">
-                 <p>$1000</p>
-                 <button>Add to cart</button>
-             </div>
-         </div>
-         </a>
-     </div>
-     <div class="col-md-4 imgbox">
-         <a href="">
-             <img src="img/port.png"  class="img-fluid"/>
-         <div class="icons">
-             <h1>Sales</h1>
-         </div>
-         <div class="holders">
-             <h1>Product name</h1>
-             <div class="priceholdergrid">
-                 <p>$1000</p>
-                 <button>Add to cart</button>
-             </div>
-         </div>
-         </a>
-     </div>
-     <div class="col-md-4 imgbox">
-         <a href="">
-             <img src="img/port.png"  class="img-fluid"/>
-         <div class="icons">
-             <h1>Sales</h1>
-         </div>
-         <div class="holders">
-             <h1>Product name</h1>
-             <div class="priceholdergrid">
-                 <p>$1000</p>
-                 <button>Add to cart</button>
-             </div>
-         </div>
-         </a>
-     </div>
+        @forelse ($pro as $item)
+        <div class="col-md-4 imgbox">
+
+            <a href="/details/{{ $item->id }}">
+                <img src="{{ asset('productimg/'.$item->image) }}"  class="img-fluid"/>
+            <div class="icons">
+                <h1>Sales</h1>
+            </div>
+            <div class="holders">
+                <h1>Product name</h1>
+                <div class="priceholdergrid">
+                    <p>$1000</p>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            </a>
+
+    </div>
+        @empty
+
+        @endforelse
+
+
 
  </div>
 </div>

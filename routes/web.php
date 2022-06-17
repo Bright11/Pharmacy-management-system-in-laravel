@@ -34,11 +34,15 @@ Route::get('viewmanager',[adminviewsController::class,'viewmanager'])->name('vie
 Route::get('demotemanager/{id}',[admininsertController::class,'demotemanager'])->name('demotemanager');
 Route::get('registermanager/{id}',[adminviewsController::class,'registermanager'])->name('registermanager');
 Route::post('adddrog',[admininsertController::class,'adddrog'])->name('adddrog');
+Route::post('addtocartpos/{id}',[admininsertController::class,'addtocartpos'])->name('addtocartpos');
+Route::get('deleteposcart/{id}',[admininsertController::class,'deleteposcart'])->name('deleteposcart');
+Route::post('checkoutpos',[admininsertController::class,'checkoutpos'])->name('checkoutpos');
 
 //
 Route::get('viewallbranch',[adminviewsController::class,'viewallbranch'])->name('viewallbranch');
 //frontend
 Route::get('/',[frontendviewsController::class,'index'])->name('index');
+Route::get('details/{id}',[frontendviewsController::class,'details'])->name('details');
 
 Auth::routes();
 

@@ -10,6 +10,9 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/">Home</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{{ route('admindashboard') }}">Dashboard</a>
+              </li>
               @if (Auth::user())
               <li class="nav-item">
                 <a class="nav-link" href="{{ route('logout') }}"
@@ -17,6 +20,9 @@
                               document.getElementById('logout-form').submit();">
                  {{ __('Logout') }}
                 </a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                </form>
               </li>
               @else
               <li class="nav-item">
