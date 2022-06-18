@@ -10,7 +10,8 @@
         <div class="col-md-9 admincontent">
             <div class="row">
                 <div class="col-md-3 admindiv">
-                    Number of branches
+                    Number of branches<br>
+                    {{ $nofbranch }}
                 </div>
                 <div class="col-md-3 admindiv">
                     Number of workers
@@ -19,7 +20,9 @@
                     Number of Managers
                 </div>
                 <div class="col-md-3 admindiv">
-                    Number of goods
+                    Number of users
+                    <br>
+                    {{ $nofuser }}
                 </div>
                 <div class="col-md-3 admindiv">
                     Total sales<br>

@@ -78,8 +78,11 @@ class adminviewsController extends Controller
     {
         # code...
         $nofdrug=Medication::count();
+        $nofbranch=branch::count();
+        $nofuser=User::count();
         $drugtotalp=Medication::sum('price');
         $soldedrug=Poschechout::sum('total');
-        return view('admin.admindashboard',['soldedrug'=>$soldedrug,'nofdrug'=>$nofdrug,'drugtotalp'=>$drugtotalp]);
+        return view('admin.admindashboard',['soldedrug'=>$soldedrug,
+        'nofdrug'=>$nofdrug,'drugtotalp'=>$drugtotalp,'nofuser'=>$nofuser,'nofbranch'=>$nofbranch]);
     }
 }

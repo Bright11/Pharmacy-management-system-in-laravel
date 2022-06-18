@@ -1,3 +1,29 @@
+<div class="container-fluid footer">
+<div class="row footerrow">
+    <div class="col-md-3">
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About us</a></li>
+        <li><a href="/">Contact us</a></li>
+    </div>
+    <div class="col-md-3">
+        <label for="">Our news later</label>
+        <input type="text" class="form-control">
+    </div>
+    <div class="col-md-3 myfootericon">
+        <li><a href="/"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="/"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="/"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="/"><i class="fa-brands fa-instagram"></i></a></li>
+    </div>
+    <div class="col-md-3">
+        <h1>Good health</h1>
+        <h1>Good sight</h1>
+        <h1>Check your boold presure</h1>
+    </div>
+</div>
+<p>@Bright C Web Developer2022</p>
+</div>
+
 <script src="{{ asset('js/jquery.js') }}"></script>
 
 <script src="{{ asset('js/seachjs.js') }}"></script>

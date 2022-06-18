@@ -82,6 +82,10 @@
          <div class="col-md-6 myfirstr">
              <h1>Coronavirus - information
                  for pharmacy customers</h1>
+                 <p>Keeping distance helps you to be corona free</p>
+                 <p>Continue washing of hands</p>
+                 <p>Stay hyginque and eat healthy food</p>
+                 <p>Norse mask is alway good for you</p>
          </div>
          <div class="col-md-6 ">
              <img src="img/g.png"/>
