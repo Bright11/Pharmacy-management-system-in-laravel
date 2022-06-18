@@ -211,7 +211,16 @@ h5 {
     flex-wrap: wrap;
 }
 
-.myfootericon .fa-brands {}
+.myfootericon .fa-brands {
+    background-color: var(--secondary-color);
+    color: var(--black);
+    font-size: 50px;
+    border-radius: 10px;
+}
+
+.myfootericon .fa-brands:hover {
+    background-color: var(--primary-color);
+}
 
 .footer p {
     color: var(--white);

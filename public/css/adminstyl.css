@@ -143,13 +143,19 @@ left padding is 100px
 
 .admindiv {
     text-align: center;
-    background-color: rgb(50, 205, 50);
     margin: 15px;
     height: 150px;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 50px;
-    color: var(--white);
     font-size: 20px;
+    box-shadow: 5px 5px 5px 5px;
+}
+
+.adminmainrow {
+    position: relative;
+    top: 10px;
+    left: 50px;
+    right: 50px;
 }
 
 .tablecart button {
@@ -181,4 +187,8 @@ left padding is 100px
 
 .totalpos {
     background-color: var(--primary-color)
+}
+
+.adminicon {
+    font-size: 40px;
 }
